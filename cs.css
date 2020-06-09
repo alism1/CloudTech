@@ -1,0 +1,1109 @@
+@font-face
+{
+    src:url(./font/Roboto-Bold.ttf);
+    font-family: "Roboto-Bold";
+}
+@font-face
+{
+    src:url(./font/Roboto-Black.ttf);
+    font-family: "Roboto-Bl";
+}
+@font-face
+{
+    src:url(./font/Roboto-Medium.ttf);
+    font-family: "Roboto-M";
+}
+@font-face
+{
+    src:url(./font/Roboto-Regular.ttf);
+    font-family: "Roboto-R";
+}
+@font-face
+{
+    src:url(./font/Roboto-Light.ttf);
+    font-family: "Roboto-L";
+}
+
+*{
+    padding: 0;
+     margin: 0;
+    text-align: center;
+    font-family: Roboto-R;
+    box-sizing: border-box;
+    z-index: 6;
+}
+
+.f-veiwport
+{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.f-veiwport .na ul li a
+{
+    font-size: 1.1vw;
+    color: white;
+    font-family: Roboto-R;
+    text-decoration: none;
+}
+
+.na
+{
+    position: absolute;
+    width: 100%;
+}
+
+.f-veiwport ul
+{
+    margin: 3% auto 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.name
+{
+    font-size: 2.3vw;
+    color: white;
+    text-align: center;
+    font-family: Roboto-M;
+    padding-top: 2%;
+}
+/*++++++++++++effect hover navigation bar++++++++++++++*/
+.f-veiwport .na ul li a::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0px;
+    background: transparent;
+    transition: width .3s;
+}
+.f-veiwport .na ul li a:hover::after
+{
+    width: 100%;
+    height: 2.5px;
+    background: rgb(219, 55, 55);
+    transition: all .2s;
+    position: relative;
+    top:5px;
+}
+
+/*+++++++++++++++++++++slide effect++++++++++++++++++++++++*/
+
+.slide-wrapper {
+    width: 300vw;
+    animation: slide 9s ease infinite both;
+    animation-play-state: running;
+}
+
+.slide {
+    float: left;
+    height: 100vmin;
+    width: 100vw;
+}
+
+.slide:nth-child(1) {
+    background-image: url(img/1.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.slide:nth-child(2) {
+    animation-delay: 10s;
+    background-image: url(img/2.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.slide:nth-child(3) {
+    background-image: url(img/3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+@keyframes slide {
+    0% {margin-left: 0px;}
+    5% {margin-left: 0px;}
+    10% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+    30% {margin-left: 0px;}
+    40% {margin-left: -100vw;}
+    50% {margin-left: -100vw;}
+    60% {margin-left: -100vw;}
+    60% {margin-left: -200vw;}
+    70% {margin-left: -200vw;}
+    80% {margin-left: -200vw;}
+    90% {margin-left: 0px;}
+}
+  
+/*+++++++++++++++++++++ end of slide effect++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++font animation effect++++++++++++++++++++++++*/
+
+  .BigCap 
+{
+    position: relative;
+    top: 81%;
+    right:25vw;
+    color: white;
+    
+}
+.BigCap h1
+{
+    font-size: 4.3vw;
+    font-family: Roboto-Bl;
+    animation: h .2s 1  forwards;
+   
+}
+@keyframes h
+{
+    0%
+    {
+        transform: translateY(-300px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+.pra
+{
+    position: absolute;
+    left:30vw;
+    width: 60vw;
+    height: 4vw;
+    overflow: hidden;
+}
+.pra p
+{
+    font-family: Roboto-R;
+    font-size:2.5vw;
+    position: absolute;
+    transform: translateX(-400px); 
+    
+}
+.pra p:nth-child(1)
+{
+    animation: p1 3s ease-out infinite 0s;
+    animation-play-state: running;
+}
+  .pra p:nth-child(2)
+{
+    animation: p1 3s ease-out infinite 1s; 
+    animation-play-state: running;
+  }
+
+  .pra p:nth-child(3)
+{
+    animation: p1 3s ease-out infinite 2s;
+    animation-play-state: running;
+}
+@keyframes p1
+{
+    0%
+    {
+        transform: translateX(-400px);  
+    }
+    3% , 5%, 20%, 27%, 30%
+    {
+        transform: translateX(100px);
+    }
+    70%
+    {
+        transform: translateY(400px);
+    }
+    100%
+    {
+        transform: translateY(400px);
+    }
+}  
+  /*+++++++++++++++++++++End of font animation effect++++++++++++++++++++++++*/
+
+  /*--------------------------------------------------Viewport 2-------------------------------------------------------------------------*/
+.f-veiwport2
+{
+    background-color:#F94F41 ;
+    height: auto;
+    width: 99vw;
+}
+
+.f-veiwport2 h1
+{
+    padding-top: 39vh;
+    color: white;
+    font-size: 38px;
+    font-family: Roboto-L;
+    line-height: 50px;
+}
+.f-veiwport2 .p
+{
+    font-size: 19px;
+    margin: 30px 39%;
+    display: flex;
+    align-items: center;
+    color: #FD7161;
+}
+.f-veiwport2 .p::after
+{
+    content: ' ';
+    height: 1px;
+    width: 100px;
+    background-color:#FD7161;
+}
+.f-veiwport2 .p::before
+{
+    display: inline-block;
+    content: ' ';
+    height: 1px;
+    width: 100px;
+    background-color:#FD7161 ;
+}
+.prog
+{ 
+    font-size: 20px;
+    color: #ffffff;
+    margin: 24vh auto 0 auto;
+    padding: 20px;
+    max-width: 70%;
+    display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+/*++++++++++++ circular progress & JS +++++++++++*/
+.circle-chart
+ {
+  width: 16vw;
+  height: 16vw;
+}
+.circle-chart__circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-linecap: square;
+  fill: none;
+  animation: circle-chart-fill 2s reverse; 
+  transform: rotate(-90deg); 
+  transform-origin: center; 
+}
+
+.circle-chart__background {
+  stroke: #FB837A;
+  stroke-width: 1;
+  fill: none; 
+}
+.circle-chart__percent {
+  text-anchor: middle;
+  font-size: 7px;
+}
+.success-stroke {
+  stroke: rgb(255, 255, 255);
+}
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+/*++++++++++++  End circular progress +++++++++++*/
+
+.rect /*+++++make rectangle++++++*/
+{
+    border-top: 15vh solid #F94F41;
+    border-bottom: 15vh solid rgb(255, 255, 255) ;
+    border-right: 49.5vw solid white;
+    border-left: 49.5vw solid white;
+}
+
+  /*------------------------------------------------------Viewport 3---------------------------------------------------------------------*/
+.f-veiwport3
+{
+    height: auto;
+    width: 99vw;
+    background-color: rgb(255, 255, 255);
+}
+.img
+{
+margin: 17vh auto 0 auto;
+height: 100vh;
+width: 77vw;
+background-image: url(img/laptop.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.line1, .line2
+{
+    color: #626262;
+    display: flex;
+    flex-direction: row;
+    max-width: 99vw;
+    margin: 0 auto 10vh auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+}
+.line1 section, .line2 section
+{ 
+display: flex;
+width: 600px;
+text-align: left;
+margin-bottom:10vh ;
+}
+.f-veiwport3 article
+{
+    height: 60px;
+    width: 2px;
+    background-color: rgba(253, 112, 97, 0.322);
+    margin: 0 18px;
+}
+.line1 section h2, .line2 section h2
+{
+    font-family: Roboto-L;
+    font-size: 25px;
+    color: #363636;
+    margin-bottom: 2vh;
+}
+.line1 section h2 , .line1 section  p, .line2 section h2 , .line2 section  p
+{
+    padding-top: 10px;
+    line-height: 25px;
+    text-align: left;
+}
+  /*------------------------------------------------------Viewport 4---------------------------------------------------------------------*/
+.f-veiwport4
+{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    width: 99vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.f-veiwport4 section
+{
+width: 25%;
+height: 50vh;
+position: relative;
+
+}
+
+.f-veiwport4 section:nth-child(1)
+{
+    background-image: url(img/p1.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+.f-veiwport4 section:nth-child(2)
+{
+    background-image: url(img/p2.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(3)
+{
+    background-image: url(img/p3.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(4)
+{
+    background-image: url(img/p4.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(5)
+{
+    background-image: url(img/p5.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(6)
+{
+    background-image: url(img/p6.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(7)
+{
+    background-image: url(img/p7.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.f-veiwport4 section:nth-child(8)
+{
+    background-image: url(img/p8.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------swing animation------------------------------------------*/
+   .container h1
+  {
+    margin-top: 15vh ;
+      font-size: 1.4vw;
+      font-family: Roboto-R;
+      line-height: 50px;
+  }
+  .container p
+  {
+      margin:0vh 1vw;
+    font-family: Roboto-R;
+      font-size: .9vw;
+      line-height: 23px;
+  }
+  .overlay {
+    position: absolute;
+    transition:all .3s ease-in-out;
+}
+.overlayBottom{
+    width: 100%;
+    height: 50%;
+    bottom:0;
+    left:0;
+    color: white;
+    background: rgb(245, 98, 81, 0.8);
+    transform-origin: bottom;
+    transform: perspective(200px) rotate3d(1, 0, 0, 90deg);
+}
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    color: white;
+    background: rgb(245, 98, 81, 0.8);
+    transform-origin: top;
+    transform: perspective(200px) rotate3d(1, 0, 0, -90deg);
+}
+.container:hover .overlayTop ,.container:hover .overlayBottom {
+    height: 100%;
+    transform: perspective(200px) rotate3d(0, 0, 0, 0deg);
+}
+   /*------------------------------------------------------Viewport 5---------------------------------------------------------------------*/
+   .f-veiwport5
+   {
+       padding: 10% 8% 0 8%;
+       background-color: rgb(255, 255, 255);
+       width: 99vw;
+       height: auto;
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+   }
+
+   .flip-card
+    {
+       color: #4F4F4F;
+        width: 280px;
+        height: 80px;
+        perspective: 1000px; 
+        line-height: 25px;
+        margin-bottom: 15em;
+  }
+
+.flip-card h2
+{
+margin: 30px 0 ;
+font-family: Roboto-L;
+font-size: 1.5vw;
+}
+
+  .flip-card img
+  {
+    border:1px solid rgba(247, 81, 72, 0.205);
+    border-radius: 50%;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    border-image: auto;
+  
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+
+    transform: rotateY(180deg);
+  }
+.L1
+  {
+      margin-top: 60px;
+      margin-left: 7vw;
+      background-color: #F75148;
+      height: 2px;
+      width: 5vw;
+  }
+  .L2
+  {
+    margin-top: 60px;
+    margin-left: 6vw;
+    background-color: #F75148;
+    height: 2px;
+    width: 7vw;
+  }
+     /*------------------------------------------------------Viewport 6---------------------------------------------------------------------*/
+.f-veiwport6
+{
+    width: 99vw;
+    height: 555px;
+    position: relative;
+}
+.content 
+{
+
+  
+    color: #f1f1f1;
+    width: 99vw;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+  }
+  .content h1
+  {
+      padding-top: 8%;
+      font-size: 2.5vw;
+      font-family: Roboto-L;
+  }
+  .content p:nth-child(2)
+  {
+    margin-top:4em;
+  }
+  
+  .content a
+  {
+    margin-top:1em;
+    color: rgb(255, 255, 255);
+    padding: 15px 18px;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3vw;
+    transition: boder .5 , color .5;
+  }
+  .content a:hover
+  {
+      border: 1px solid #F75148;
+      color: #F75148;
+  }
+  #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 99vw; 
+    height: auto;
+  }
+       /*------------------------------------------------------Viewport 7---------------------------------------------------------------------*/
+.f-veiwport7
+{
+    z-index: -3;
+    position: sticky;
+    bottom: 0;
+    padding: 3vh 4vw;
+    width: 99vw;
+    height: 28vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.f-veiwport7 footer
+{
+    font-size: .9vw;
+    font-family: Roboto-L;
+    color: #acaaaa;
+    line-height: 21px;
+    display: flex;
+    flex-flow:column;
+    align-items: flex-start;
+}
+.f-veiwport7 footer p:nth-child(4)
+{
+    margin-top: 15px;
+}
+
+.SM
+{
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.SM img
+{
+    box-sizing: content-box;
+    margin-left: 15px;
+     width: 18px;
+     height: 18px;
+     background-color: rgb(0, 0, 0);
+     border: 5px solid black;
+     transition: 0.3s;
+}
+
+.SM:hover
+{
+    background-color: rgb(180, 29, 21);
+    border: 5px solid #F75148;
+}
+.allcont
+{
+    background-color: #ffffff;
+    width: 99vw;
+}
+
+/*----------------------------------------------------- responsive Tablet------------------------------------------------*/
+
+@media screen and (max-width: 768px) 
+{
+  
+ /*------------------------------------------------------Viewport 1---------------------------------------------------------------------*/
+    .f-veiwport
+{
+    height: 50vh;
+}
+.f-veiwport .na ul li a
+{
+    font-size: 1.6vw;
+    
+}
+.f-veiwport .na ul li
+{
+    margin-left: 2vw;
+    margin-bottom: 3%;
+}
+.f-veiwport ul
+{
+    width: 80vw;
+    margin: 3% auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.name
+{
+    font-size: 2.5vw;
+}
+.slide {
+    height: 70vmin;
+}
+.pra
+{
+    left:23vw;
+}
+
+/*------------------------------------------------------Viewport 2---------------------------------------------------------------------*/
+
+.f-veiwport2 h1
+{
+    width: 85vw;
+    margin: 0 auto;
+    padding-top: 20vh;
+    font-size: 35px;
+}
+.f-veiwport2 .p
+{
+    font-size: 15px;
+    margin: 30px 20px;
+    justify-content: center;
+}
+.prog
+{ 
+    font-size: 15px;
+    margin: 10vh auto 0 auto  ;
+    padding-bottom: 13vh;
+    max-width: 90%;
+     justify-content: space-evenly;
+}
+.circle-chart
+ {
+  width: 120px;
+  height: 120px;
+}
+.circle-chart__circle {
+  stroke-width: 2;
+}
+.circle-chart__background {
+  stroke-width: 2;
+}
+.circle-chart__percent {
+  font-size: 7px;
+}
+.rect
+{
+    border-top: 10vh solid #F94F41;
+}
+/*------------------------------------------------------Viewport 3---------------------------------------------------------------------*/
+.img
+{
+margin: 10vh auto 0 auto;
+height: 40vh;
+width:86%;
+background-position: center;
+background-size: cover;
+}
+.line1, .line2
+{
+
+    width: 100vw;
+    font-size: 15px;
+}
+.line1 section, .line2 section
+{ 
+display: flex;
+width: 47vw;
+margin-left: 1vw;
+margin-bottom:0 ;
+}
+
+  /*------------------------------------------------------Viewport 4---------------------------------------------------------------------*/
+
+  .f-veiwport4 section
+  {
+  width: 25%;
+  height: 18.5vh;  
+  }
+ .container h1
+    {
+      margin: 2.5vh 1vw .6vh 1vw ;
+        font-size: 2.5vw;
+        font-family: Roboto-R;
+        line-height: 25px;
+    }
+.container p
+    {
+        margin:0vh 1vw;
+      font-family: Roboto-R;
+        font-size: 1.4vw;
+        line-height: 15px;
+    }
+
+
+
+   /*------------------------------------------------------Viewport 5---------------------------------------------------------------------*/
+.f-veiwport5
+{
+    padding-top: 15vh  ;
+    height: 55vh;
+
+}
+    .flip-card
+{
+    width: 140px;
+    margin-left: 1vw; 
+}
+.flip-card h2
+{
+margin: 30px 0 ;
+font-family: Roboto-Bold;
+font-size: 2vw;
+}
+
+/*------------------------------------------------------Viewport 6---------------------------------------------------------------------*/
+.f-veiwport6
+{
+    height: 50vh;
+}
+.content h1
+{
+    padding-top: 15%;
+    font-size: 5vw;
+    font-family: Roboto-Bold;
+}
+.content p:nth-child(2)
+{
+    margin-top:6%;
+}
+.content a
+{
+    margin-top:2%;
+    padding: 20px 40px;
+    font-size: 3vw;
+}
+
+#myVideo {
+    width: auto; 
+    height: 50vh;
+}
+
+/*------------------------------------------------------Viewport 7---------------------------------------------------------------------*/
+.f-veiwport7
+{
+    height: 24vh;
+}
+.f-veiwport7 footer
+{
+    font-size: 1.7vw;
+    font-family: Roboto-L;
+    color: #acaaaa;
+    width: 45vw;
+}
+
+.f-veiwport7 footer p
+{
+    text-align: left;
+}
+.f-veiwport7 footer p:nth-child(4)
+{
+    margin-top: 15px;
+}
+
+.SM
+{
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.SM img
+{
+    box-sizing: content-box;
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border: 5px solid black;
+    transition: border .5 ;
+}
+
+}
+
+
+/*----------------------------------------------------- responsive Mobile ------------------------------------------------*/
+
+@media screen and (max-width: 480px) 
+{
+  
+ /*------------------------------------------------------Viewport 1---------------------------------------------------------------------*/
+    .f-veiwport
+{
+    height: auto;
+}
+.f-veiwport .na ul li a
+{
+    font-size: 2.5vw;
+    color: rgb(44, 43, 43);
+}
+.na
+{
+    position:static;
+    width: 100%;
+}
+
+.f-veiwport ul
+{
+    display: flex;
+    flex-flow: column;
+}
+.name
+{
+    font-size: 4vw;
+    color: rgb(44, 43, 43);
+    padding-top: 4%;
+}
+.pra
+{
+    left:15vw;
+}
+/*++++++++++++effect hover navigation bar++++++++++++++*/
+.f-veiwport .na ul li a::after
+{
+    content: '';
+    background: transparent;
+    transition: none;
+}
+.f-veiwport .na ul li a:hover::after
+{
+    background: transparent;
+    transition: none;
+}
+
+/*------------------------------------------------------Viewport 2---------------------------------------------------------------------*/
+
+.f-veiwport2 h1
+{
+    width: 85vw;
+    margin: 0 auto;
+    padding-top: 20vh;
+    font-size: 35px;
+}
+.f-veiwport2 .p
+{
+    font-size: 15px;
+    margin: 30px 20px;
+    justify-content: center;
+}
+.prog
+{ 
+    font-size: 25px;
+    margin: 10vh auto 0 auto  ;
+    padding-bottom: 13vh;
+    max-width: 90%;
+     justify-content: space-evenly;
+}
+.prog p
+{
+    margin-bottom: 20px;
+}
+.circle-chart
+ {
+  width: 80vw;
+  height: 80vw;
+}
+.circle-chart__circle {
+  stroke-width:1;
+}
+.circle-chart__background {
+  stroke-width: 1;
+}
+
+/*------------------------------------------------------Viewport 3---------------------------------------------------------------------*/
+.img
+{
+height: 32vh;
+width:95%;
+}
+.line1, .line2
+{
+
+    width: 90vw;
+    margin: 5vh auto;
+}
+.line1 section, .line2 section
+{ 
+flex-direction: column;
+align-items: center;
+width: 90%;
+margin-bottom:10vh ;
+}
+.f-veiwport3 article
+{
+    height: 0px;
+    width: 0px;
+    margin: 0;
+}
+
+  /*------------------------------------------------------Viewport 4---------------------------------------------------------------------*/
+
+  .f-veiwport4 section
+  {
+  width: 100%;
+  height: 55vh;  
+
+  }
+ .container h1
+    {
+      margin: 10vh 3vw .6vh 3vw ;
+        font-size: 8vw;
+        line-height: 50px;
+    }
+.container p
+    {
+        margin:0vh 5vw;
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+
+   /*------------------------------------------------------Viewport 5---------------------------------------------------------------------*/
+.f-veiwport5
+{
+    padding-top: 15vh  ;
+    height: auto;
+
+}
+.f-veiwport5 br{
+    display: none;
+}
+
+.flip-card
+{
+    width: 100%;
+}
+.flip-card h2
+{
+margin: 30px 0 ;
+font-size: 4vw;
+}
+
+.L1
+  {
+      margin-left: 33vw;
+      width: 15vw;
+  }
+  .L2
+  {
+    margin-left: 29vw;
+    width: 25vw;
+  }
+/*------------------------------------------------------Viewport 7---------------------------------------------------------------------*/
+.f-veiwport7
+{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column-reverse;
+}
+.f-veiwport7 footer
+{
+    color: #acaaaa;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-veiwport7 footer p
+{
+    font-size: 2.5vw;
+    line-height: 21px;
+    text-align: center;
+
+}
+.f-veiwport7 footer p:nth-child(4)
+{
+    margin-top: 15px;
+}
+
+.SM
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh; 
+}
+
+.SM img
+{
+    box-sizing: content-box;
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border: 5px solid black;
+    transition: border .5 ;
+}
+
+}
